@@ -63,4 +63,20 @@ CREATE TABLE employees (
 
 SELECT * FROM employees;
 
+CREATE TABLE Books ( 
+	book_id INT UNIQUE,
+	book_bame VARCHAR(50),
+	author_id VARCHAR(50),
+	CONSTRAINT b_pk PRIMARY KEY(book_id)
+	
+);
+
+SELECT * FROM Books;
+
+CREATE TABLE Authors(
+	author_id INT,
+	author_name VARCHAR(50),
+	nationality VARCHAR
+
+)
 
