@@ -63,6 +63,8 @@ CREATE TABLE employees (
 
 SELECT * FROM employees;
 
+--5. Soru Cevabı
+
 CREATE TABLE Books ( 
 	book_id INT UNIQUE,
 	book_bame VARCHAR(50),
@@ -71,12 +73,14 @@ CREATE TABLE Books (
 	
 );
 
+
+
 SELECT * FROM Books;
 
 CREATE TABLE Authors(
 	author_id INT,
 	author_name VARCHAR(50),
-	nationality VARCHAR
+	nationality VARCHAR(50)
 
 )
 
