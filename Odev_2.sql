@@ -65,22 +65,18 @@ SELECT * FROM employees;
 
 --5. Soru Cevabı
 
-CREATE TABLE Books ( 
-	book_id INT UNIQUE,
-	book_bame VARCHAR(50),
-	author_id VARCHAR(50),
-	CONSTRAINT b_pk PRIMARY KEY(book_id)
+CREATE TABLE Authors(
+	author_id INT PRIMARY KEY,
+	author_name VARCHAR(50),
+	nationality VARCHAR(50)
 	
 );
 
-
-
-SELECT * FROM Books;
-
-CREATE TABLE Authors(
-	author_id INT,
-	author_name VARCHAR(50),
-	nationality VARCHAR(50)
-
-)
-
+CREATE TABLE Books ( 
+	book_id INT PRIMARY KEY,
+	book_name VARCHAR(50),
+	author_id VARCHAR(50),
+	CONSTRAINT fk_id FOREIGN KEY(book_id) REFERENCES Authors(author_id)
+	
+);
+Select * from Books;
