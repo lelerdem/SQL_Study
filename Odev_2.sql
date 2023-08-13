@@ -1,3 +1,4 @@
+
 -- 1.Cevap
 CREATE TABLE student (
 		student_id INT UNIQUE,
@@ -79,4 +80,6 @@ CREATE TABLE Books (
 	CONSTRAINT fk_id FOREIGN KEY(book_id) REFERENCES Authors(author_id)
 	
 );
+--Görmek
+SELECT * FROM Books;
 Select * from Books;
